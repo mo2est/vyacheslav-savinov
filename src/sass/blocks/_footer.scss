@@ -1,0 +1,11 @@
+.footer {
+    height: 262px;
+    background-color: black;
+    padding: 83px 0 77px 0;
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        width: 257px;
+        margin: 0 auto;
+    }
+}

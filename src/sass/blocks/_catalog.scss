@@ -1,0 +1,87 @@
+.catalog {
+    min-height: 815px;
+    background: black;
+    padding: 90px 60px 0 60px;
+    &__title {
+        position: relative;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+        text-align: center;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 49px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            width: 638px;
+            height: 1px;
+            background-color: white;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 49px;
+            display: block;
+            width: 638px;
+            height: 1px;
+            background-color: white;
+        }
+    }
+    &-wrapper {
+        margin-top: 90px;
+        width: 1803px;
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        text-decoration: none;
+    }
+    &__item {
+        display: block;
+        width: 532px;
+        height: 476px;
+        border-radius: 10px;
+        padding: 65px 54px;
+        transition: 0.5s all;
+        &-1 {
+            background-image: url('../../img/Catalog-item-1.jpg');
+        }
+        &-2 {
+            background-image: url('../../img/Catalog-item-2.jpg');
+        }
+        &-3 {
+            background-image: url('../../img/Catalog-item-3.jpg');
+        }
+        &:hover {
+            scale: 102%;  
+        }
+    }
+    &__block {
+        width: 424px;
+        height: 345px;
+        background: rgba(217, 217, 217, 0.7);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-top: 149px;
+    }
+    &__header {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+    &__divider {
+        margin: 99px auto 0 auto;
+        width: 1702px;
+        height: 2px;
+        background: #D9D9D9;
+    }
+}
