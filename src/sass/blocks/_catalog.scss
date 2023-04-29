@@ -36,8 +36,12 @@
     &-wrapper {
         margin-top: 90px;
         width: 1803px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 532px);
+        grid-template-rows: 476px;
+        column-gap: 104px;
+        row-gap: 104px;
+        grid-auto-rows: 476px;
     }
     a {
         text-decoration: none;
@@ -81,7 +85,7 @@
     &__divider {
         margin: 99px auto 0 auto;
         width: 1702px;
-        height: 2px;
+        height: 1px;
         background: #D9D9D9;
     }
 }
