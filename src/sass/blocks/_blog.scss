@@ -1,0 +1,20 @@
+.blog {
+    min-height: 1030px;
+    padding: 0 60px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 532px);
+        column-gap: 100px;
+        grid-template-rows: 685px;
+        row-gap: 100px;
+    }
+    &__item-1 {
+        background: url('../../img/Blog-item1-bg.jpg') center (center/cover) no-repeat;
+    }
+    &__item-2 {
+        background: url('../../img/Blog-item2-bg.jpg') center (center/cover) no-repeat;
+    }
+    &__item-3 {
+        background: url('../../img/Blog-item3-bg.jpg') center (center/cover) no-repeat;
+    }
+}
