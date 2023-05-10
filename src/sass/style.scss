@@ -17,8 +17,48 @@
     background-color: #000;
 }
 
+.bottom-divider {
+    margin: 99px auto 0 auto;
+    width: auto;
+    height: 1px;
+    background: #ffff;
+}
+
+.main-title {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 49px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 638px;
+        height: 1px;
+        background-color: #ffff;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 49px;
+        display: block;
+        width: 638px;
+        height: 1px;
+        background-color: white;
+    }
+}
+
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/catalog';
 @import 'blocks/footer';
+@import 'blocks/about_me';
 @import 'blocks/media';
