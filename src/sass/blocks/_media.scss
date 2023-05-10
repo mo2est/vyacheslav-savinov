@@ -10,18 +10,18 @@ xxl: 1400px */
             bottom: -20px;
         }
     }
-    .catalog {
-        &__title {
-            &::before {
-                content: '';
-                left: 0px;
-                width: 638px;
-            }
-            &::after {
-                right: 0px;
-                width: 638px;
-            }
+    .main-title {
+        &::before {
+            content: '';
+            left: 0px;
+            width: 638px;
         }
+        &::after {
+            right: 0px;
+            width: 638px;
+        }
+    }
+    .catalog {
         &-wrapper {
             grid-template-columns: repeat(3, 450px);
             grid-template-rows: 450px;
@@ -37,17 +37,15 @@ xxl: 1400px */
     }
 }
 @media (max-width: 1800px) {
-    .catalog {
-        &__title {
-            &::before {
-                content: '';
-                left: 0px;
-                width: 538px;
-            }
-            &::after {
-                right: 0px;
-                width: 538px;
-            }
+    .main-title {
+        &::before {
+            content: '';
+            left: 0px;
+            width: 538px;
+        }
+        &::after {
+            right: 0px;
+            width: 538px;
         }
     }
 }
@@ -57,19 +55,19 @@ xxl: 1400px */
             bottom: -20px;
         }
     }
+    .main-title {
+        &::before {
+            content: '';
+            left: 0px;
+            width: 438px;
+        }
+        &::after {
+            right: 0px;
+            width: 438px;
+        }
+    }
     .catalog {
         min-height: 728px;
-        &__title {
-            &::before {
-                content: '';
-                left: 0px;
-                width: 438px;
-            }
-            &::after {
-                right: 0px;
-                width: 438px;
-            }
-        }
         &-wrapper {
             grid-template-columns: repeat(3, 400px);
             grid-template-rows: 400px;
@@ -91,19 +89,19 @@ xxl: 1400px */
             bottom: -20px;
         }
     }
+    .main-title {
+        &::before {
+            content: '';
+            left: 0px;
+            width: 330px;
+        }
+        &::after {
+            right: 0px;
+            width: 330px;
+        }
+    }
     .catalog {
         min-height: 528px;
-        &__title {
-            &::before {
-                content: '';
-                left: 0px;
-                width: 330px;
-            }
-            &::after {
-                right: 0px;
-                width: 330px;
-            }
-        }
         &-wrapper {
             grid-template-columns: repeat(3, 350px);
             grid-template-rows: 350px;
@@ -135,19 +133,19 @@ xxl: 1400px */
             bottom: -20px;
         }
     }
+    .main-title {
+        &::before {
+            content: '';
+            left: 0px;
+            width: 240px;
+        }
+        &::after {
+            right: 0px;
+            width: 240px;
+        }
+    }
     .catalog {
         min-height: 528px;
-        &__title {
-            &::before {
-                content: '';
-                left: 0px;
-                width: 240px;
-            }
-            &::after {
-                right: 0px;
-                width: 240px;
-            }
-        }
         &-wrapper {
             margin-top: 70px;
             grid-template-columns: repeat(3, 280px);
@@ -185,21 +183,20 @@ xxl: 1400px */
             }
         }
     }
+    .main-title {
+        &::before {
+            content: '';
+            left: 0px;
+            width: 230px;
+        }
+        &::after {
+            right: 0px;
+            width: 230px;
+        }
+    }
     .catalog {
         padding: 30px 60px 0 60px;
         min-height: 528px;
-        &__title {
-            &::before {
-                content: '';
-                left: 0px;
-                width: 230px;
-            }
-            &::after {
-                content: '';
-                right: 0px;
-                width: 230px;
-            }
-        }
         &-wrapper {
             grid-template-columns: 350px;
             grid-template-rows: repeat(3,350px);
@@ -215,50 +212,41 @@ xxl: 1400px */
 }
 
 @media (max-width: 940px) {
-    .catalog {
-        &__title {
-            &::before {
-                content: '';
-                left: 0px;
-                width: 200px;
-            }
-            &::after {
-                content: '';
-                right: 0px;
-                width: 200px;
-            }
+    .main-title {
+        &::before {
+            content: '';
+            left: 0px;
+            width: 200px;
+        }
+        &::after {
+            right: 0px;
+            width: 200px;
         }
     }
 }
 @media (max-width: 875px) {
-    .catalog {
-        &__title {
-            &::before {
-                content: '';
-                left: 0px;
-                width: 180px;
-            }
-            &::after {
-                content: '';
-                right: 0px;
-                width: 180px;
-            }
+    .main-title {
+        &::before {
+            content: '';
+            left: 0px;
+            width: 180px;
+        }
+        &::after {
+            right: 0px;
+            width: 180px;
         }
     }
 }
 @media (max-width: 820px) {
-    .catalog {
-        &__title {
-            &::before {
-                content: '';
-                left: 0px;
-                width: 150px;
-            }
-            &::after {
-                content: '';
-                right: 0px;
-                width: 150px;
-            }
+    .main-title {
+        &::before {
+            content: '';
+            left: 0px;
+            width: 150px;
+        }
+        &::after {
+            right: 0px;
+            width: 150px;
         }
     }
 }
@@ -269,9 +257,9 @@ xxl: 1400px */
     }
     .catalog {
         padding: 30px 15px 0 15px;
-        &__title {
+        .main-title {
             &::before {
-                display: none;
+               display: none;
             }
             &::after {
                 display: none;
@@ -313,11 +301,11 @@ xxl: 1400px */
             }
         }
     }
+    .main-title {
+        display: none;
+    }
     .catalog {
         padding: 0px 15px 0 15px;
-        &__title {
-            display: none;
-        }
         &__divider_767px {
             margin: 0px auto 0 auto;
         }
